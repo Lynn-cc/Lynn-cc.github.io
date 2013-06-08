@@ -23,3 +23,6 @@ _Ps、部分代码有做修改。_
 - 新浪微博：[@麟儿丶](http://weibo.com/13511031)
 - 腾讯微博：[@凤麟妹妹](http://t.qq.com/qidaoxingfu)
 - Mail：babyliner^gmail.com
+
+##特别鸣谢
+来自[beiyuu](http://github.com/beiyuu)的文章：[使用github pages建独立博客](http://beiyuu.com/github-pages/)
