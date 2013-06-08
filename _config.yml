@@ -4,4 +4,5 @@ auto: true # automatically update your jekyll
 server: true
 pugments: true
 paginate: 6
+permalink:/:title
 exclude: ["Gemfile", "Gemfile.lock", "README.md", 'sass', 'watch.sh', 'style.scss'] # files to exclude
