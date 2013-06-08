@@ -1,7 +1,6 @@
 ---
 layout: post_page
 title: 5 HTML5 Javascript APIs
-keywords: HTML5, Javascript, API
 ---
 
 原文:[5 HTML5 Javascript APIs to keep an eye on](http://daker.me/2013/06/5-html5-javascript-apis-to-keep-an-eye-on.html)
