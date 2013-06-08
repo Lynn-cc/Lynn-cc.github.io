@@ -1,0 +1,14 @@
+/* TEAM */
+
+Nick: qidaoxingfu, Lynn.
+Site: http://github.com/qidaoxingfu.
+Weibo: http://weibo.com/13511031.
+Location: Beijing, China.
+
+
+/* SITE */
+
+Last update: 2013/06/08
+Standards: HTML5, CSS3, Javacript..
+Components: jQuery, etc.
+Software: Vim, Webstorm, etc.
