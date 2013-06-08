@@ -10,6 +10,7 @@ Contents
 3. Entries
     a. Pagination
     b. Post Style
+    c. disqus_thread
 4. Footer
 ================================
 
@@ -230,6 +231,14 @@ hr{
         font-size: 1.15em;
         color: darken($grayLight, 10%);
     }
+}
+
+// 3. b Post Style
+// --------------------------------------------------
+
+#disqus_thread {
+    width: 50em;
+    float: right;
 }
 
 // 4. Footer
