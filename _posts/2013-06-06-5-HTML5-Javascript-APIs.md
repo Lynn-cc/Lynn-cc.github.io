@@ -7,10 +7,7 @@ title: 5 HTML5 Javascript APIs
 
 翻译:[@麟儿丶](http://weibo.com/13511031)
 
-在我的上一篇文章中，讲的是HTML5 API，所以，接下来写一些旧的新的Javascript API应该也会很有意思。CSS正在不断强化，直到今天，可以用纯CSS实现过去必须由Javascript来完成的事情，而另一方面，Javascript也必须强化来跟随这个变革，所以现在Javascript可以做非常多的事情了，比如，访问硬件（摄像头、麦克风、游戏手柄、GPU），还有访问文件系统和Websocket。
-
-
-
+在我的[上一篇文章](http://daker.me/2013/05/5-html5-features-you-need-to-know.html)中，讲的是HTML5 API，所以，接下来写一些旧的新的Javascript API应该也会很有意思。CSS正在不断强化，直到今天，可以用纯CSS实现过去必须由Javascript来完成的事情，而另一方面，Javascript也必须强化来跟随这个变革，所以现在Javascript可以做非常多的事情了，比如，访问硬件（摄像头、麦克风、游戏手柄、GPU），还有访问文件系统和Websocket。
 
 ####电池状态API
 
