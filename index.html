@@ -15,7 +15,7 @@ title: Home
                 {% for post in paginator.posts %}
                 <li>
                 <a href="{{ post.url }}">
-                    <h3>{{ post.title }}</h3>
+                    <h3>{{ post.titleCN }}</h3>
                 </a>
                 <time>{{ post.date | date: "%d %B %Y" }}</time>
                 <!--div>Keywords:{{ post.keywords, '' }}</div-->
