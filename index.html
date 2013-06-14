@@ -18,8 +18,13 @@ title: Home
                     <h3>{{ post.titleCN }}</h3>
                 </a>
                 <time>{{ post.date | date: "%d %B %Y" }}</time>
-                <!--div>Keywords:{{ post.keywords, '' }}</div-->
-                <div>{{ post.content | truncatewords }}</div>
+                <div class="keywords">
+                    Keywords:
+                    {% for tag in post.tags %}
+                    <span>{{ tag, '' }}</span>
+                    {% endfor %}
+                </div>
+                <div class="content">{{ post.content | truncatewords }}</div>
                 </li>
                 {% endfor %}
             </ul>
