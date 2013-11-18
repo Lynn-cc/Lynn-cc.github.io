@@ -83,7 +83,7 @@ hr{
 
 .content {
 
-    h1{
+    h1 {
         font-family: 'Raleway';
         text-transform: uppercase;
         font-weight: normal;
@@ -132,7 +132,10 @@ hr{
         font-weight: normal;
         font-size: 2em;
         margin-top: 0.2em;
-        @extend .a-hover;
+
+        a {
+            color: inherit;
+        }
     }
 
     .content {
@@ -201,7 +204,7 @@ hr{
     padding: 0.65em;
     @include border-radius(2em);
 
-    a{
+    a {
         @extend .a-hover;
         color: $white;
     }
@@ -278,7 +281,7 @@ footer .container{
     font-size: 0.8em;
     text-align: center;
 
-    a{
+    a {
         color: $white;
         text-decoration: underline;
     }

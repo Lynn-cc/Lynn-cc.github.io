@@ -8,15 +8,16 @@ title: Home
     <div class="container">
         <div class="row-fluid">
             <section class="content">
-            <h1>Lynn's Blog</h1>
-            <div class="sub-title">About HTML5, Javascript, etc.</div>
+                <h1>Lynn's Blog</h1>
+                <div class="sub-title">About HTML5, Javascript, etc.</div>
             </section>
             <ul class="entries">
                 {% for post in paginator.posts %}
                 <li>
-                <a href="{{ post.url }}">
-                    <h2>{{ post.titleCN }}</h2>
-                </a>
+                    <h2>
+                        <a href="{{ post.url }}">{{ post.titleCN }}</a>
+                    </h2>
+                
                 <time>{{ post.date | date: "%d %B %Y" }}</time>
                 <div class="keywords">
                     Keywords:
@@ -24,7 +25,7 @@ title: Home
                     <span>{{ tag, '' }}</span>
                     {% endfor %}
                 </div>
-                <div class="content">{{ post.content | truncatewords }}</div>
+                <!--div class="content">{{ post.content | truncatewords }}</div-->
                 </li>
                 {% endfor %}
             </ul>
