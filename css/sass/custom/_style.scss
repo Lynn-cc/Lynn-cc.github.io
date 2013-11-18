@@ -134,16 +134,16 @@ hr{
         @extend .a-hover;
     }
 
-    a{
-        color: #08c;
-        @extend .a-hover;
-    }
-
     .content {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.6em;
         font-size: 1.15em;
         color: $gray;
+
+        a {
+            color: #08c;
+            @extend .a-hover;
+        }
     }
 
     .keywords {
