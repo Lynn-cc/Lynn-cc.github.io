@@ -1,6 +1,6 @@
 ---
 layout: post_page
-title: The proxy tool - Charles
+title: The proxy tool, Charles
 tags: debug tool
 category: tools
 titleCN: 使用代理软件Charles
