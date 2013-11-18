@@ -1,6 +1,11 @@
 Lynn的个人博客
 ============================
 
+##最新
+自从更新过一篇翻译之后再也没后续了～典型的半途而废习惯综合症患者。。
+我会尽量找点内容来写的。。
+-_-#
+
 ##关于内容
 暂时打算是练习翻译一些国外的关于HTML5和Javascript的文章
 
@@ -18,13 +23,7 @@ __Thanks__
 _Ps、部分代码有做修改。_
 
 ##关于我
-- 新浪微博：[@麟儿丶](http://weibo.com/13511031)
-- 腾讯微博：[@凤麟妹妹](http://t.qq.com/qidaoxingfu)
 - Mail：babyliner^gmail.com
 
 ##特别鸣谢
 来自[beiyuu](http://github.com/beiyuu)的文章：[使用github pages建独立博客](http://beiyuu.com/github-pages/)
-
-
-##独立域名
-[cchub.me](http://cchub.me)
