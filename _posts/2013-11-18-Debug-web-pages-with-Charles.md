@@ -12,9 +12,9 @@ titleCN: 利用Charles调试网页
 
 _注：基本所有的charles设置都可以使用通配符，有部分可以使用正则表达式（一般需勾选Regex框）_
 
-###基本配置
+####基本配置
 
-#####设置全局代理
+- 设置全局代理
 _Proxy - Mac OS X Proxy_
 
 MAC下是这个勾选项，还有一个是Mozilla Firfox Proxy
@@ -28,7 +28,7 @@ MAC下是这个勾选项，还有一个是Mozilla Firfox Proxy
 所以在这就啰嗦了几句。
 
 
-#####设定需要被记录的请求/响应的匹配规则
+- 设定需要被记录的请求/响应的匹配规则
 
 _Proxy - Recording Settings_
 
@@ -36,17 +36,17 @@ _Proxy - Recording Settings_
 
 ![设置include](http://pic.yupoo.com/babyliner1026/DjX3dVga/klTNu.png)
 
-#####设定始终不用缓存
+- 设定始终不用缓存
 
 _Tools - No Caching_
 
 勾选Enable No Caching,这个一般大家默认都会用到的吧
 
 
-### 个性规则配置
+#### 个性规则配置
 
 
-#####设定文件本地替换
+- 设定文件本地替换
 _Tools - Map Local_
 
 勾选enable map local，charles就可以按照规则，把请求的对应目录（或文件）换成本地的目录（或文件）
@@ -58,7 +58,7 @@ _小tip：弹出的编辑窗里不用麻烦地挨个填，把整个网址输到h
 ![本地替换规则](http://pic.yupoo.com/babyliner1026/DjXTbWaR/AuDYg.png)
 
 
-#####设定重写请求/响应规则
+- 设定重写请求/响应规则
 
 _Tools - Rewrite_
 
@@ -99,7 +99,7 @@ http://mat1.gtimg.com/www/mb/js/mi.js
 Rewrite功能很强大的，包括header的增删改和param的增删改，还有body修改等。大家可以尽情发挥修改请求和替换文件目录的创意～
 
 
-#####为其他设备做代理
+- 为其他设备做代理
 
 _proxy - proxy setting_
 
@@ -114,12 +114,11 @@ charles的另外一个比较常用的功能，就是为同一个局域网内的�
 电脑本地编辑，保存，刷新移动设备，这样调试很简单吧！
 
 
-#####其他偶尔用到的功能
-- Proxy - Throttle Setting
-	这是网络延迟功能，可以测试慢网速下的体验效果
-- Tool - Map Remote
-	类似Map Local，只是替换成的是一个另网址，而不是本地路径
-	
+- 其他偶尔用到的功能
+    1 Proxy - Throttle Setting
+    	这是网络延迟功能，可以测试慢网速下的体验效果
+    2 Tool - Map Remote
+	    类似Map Local，只是替换成的是一个另网址，而不是本地路径
 	
 
 Charles还有很多其他的功能，比较反向代理，断点，保存完整请求什么的，只是lz木有用过，所以就只有大家自己去体验吧～
