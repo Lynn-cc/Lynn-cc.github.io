@@ -212,7 +212,7 @@ hr{
     float: right;
     margin-top: -2em;
 
-    h5{
+    .post_date {
         margin:0.4em 0 2.5em 0;
         font-weight: normal;
         letter-spacing: 0.1em;
@@ -220,29 +220,38 @@ hr{
         border-bottom: 1px solid lighten($grayLight, 20%);
     }
 
-    h2{
-        font-family: 'Raleway';
+    h2 {
+        font-family: 'Raleway', 'microsoft yahei';
         font-weight: normal;
-        font-size: 5em;
+        font-size: 4em;
+        line-height: 2em;
         padding: 1.1em 0 0.2em;
         letter-spacing: 0.05em;
         color: $greenSpotify;
 
-        span{
+        span {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         }
     }
 
-    h4{
+    h3 {
         line-height:1.5em;
         margin-top:1em;
-        font-family: 'Raleway';
+        font-family: 'Raleway', 'arial';
         color: $greenSpotify;
         font-weight: normal;
-        font-size: 2em;
+        font-size: 1.6em;
     }
 
-    section{
+    h4 {
+        line-height: 1.5em;
+        margin: 0.8em;
+        font-family: 'Raleway', 'arial';
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+
+    section {
         font-family: Arial, Helvetica, sans-serif;
         line-height: 1.9em;
         font-size: 1.15em;
