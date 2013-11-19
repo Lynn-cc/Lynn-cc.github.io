@@ -56,6 +56,13 @@ hr{
   src: local('Raleway'), url(http://themes.googleusercontent.com/static/fonts/raleway/v6/IczWvq5y_Cwwv_rBjOtT0w.woff) format('woff');
 }
 
+@font-face {
+  font-family: 'Varela Round';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Varela Round'), url(http://themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
+}
+
 // 1. b Extends
 // --------------------------------------------------
 
@@ -84,8 +91,8 @@ hr{
 .content {
 
     h1 {
-        font-family: 'Raleway';
-        text-transform: uppercase;
+        font-family: 'Varela Round', 'YouYuan', 'sans-serif';
+        /*text-transform: uppercase;*/
         font-weight: normal;
         font-size: 4.1em;
         margin-top: 1em;
@@ -127,7 +134,7 @@ hr{
 
     h2 {
         line-height: 2.4em;
-        font-family: 'Raleway';
+        font-family: 'Varela Round', 'YouYuan', 'sans-serif';
         color: $greenSpotify;
         font-weight: normal;
         font-size: 2em;
@@ -139,15 +146,11 @@ hr{
     }
 
     .content {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, 'STXihei', sans-serif;
         line-height: 1.6em;
         font-size: 1.15em;
         color: $gray;
 
-        a {
-            color: #08c;
-            @extend .a-hover;
-        }
     }
 
     .keywords {
@@ -225,7 +228,7 @@ hr{
     }
 
     h2 {
-        font-family: 'Raleway', 'microsoft yahei';
+        font-family: 'Varela Round', 'YouYuan', 'sans-serif';
         font-weight: normal;
         font-size: 4em;
         line-height: 2em;
@@ -233,15 +236,16 @@ hr{
         letter-spacing: 0.05em;
         color: $greenSpotify;
 
-        span {
-            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        }
+        
+        //span {
+        //   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        //}
     }
 
     h3 {
         line-height: 2em;
         margin-top: 1em;
-        font-family: 'Raleway', 'arial';
+        font-family: 'Raleway', 'STXihei', 'arial';
         color: darken($greenSpotify, 5%);
         font-weight: normal;
         font-size: 1.6em;
@@ -250,17 +254,27 @@ hr{
     h4 {
         line-height: 1.8em;
         margin: 1em 0 0.6em;
-        font-family: 'Raleway', 'arial';
+        font-family: Arial, 'STSong', 'sans-serif';
         font-weight: bold;
         font-size: 1.2em;
-        color: lighten($greenSpotify, 5%);
+        color: darken($greenSpotify, 5%);
     }
 
     section {
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial, Helvetica, 'STSong', sans-serif;
         line-height: 1.9em;
         font-size: 1.15em;
         color: darken($grayLight, 10%);
+
+        a {
+            color: lighten($grayLight, 10%);
+        }
+
+        em {
+            color: #68c;
+            font-family: '华文楷体', '楷体', 'Times New Roman';
+        }
+
     }
 }
 
