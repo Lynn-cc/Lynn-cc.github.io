@@ -74,9 +74,9 @@ _Tools - Rewrite_
 这里不能只用map local，是因为js文件在被上传到服务器的时候会自动加上日期后缀，还有可能有a-z每日版本后缀。这样是为了保证版本更新迭代不会受到缓存的影响。当然也方便回退版本等，这种加后缀应该很多网站都有用到。所以，替换要求是这样的：
 
 
-请求 http://mat1.gtimg.com/www/mb/js/mi_131114b.js
+请求 _http://mat1.gtimg.com/www/mb/js/mi\_131114b.js_
 	
-需要被替换成对应的本地文件 (workDir)/js/mi.js
+需要被替换成对应的本地文件 _(workDir)/js/mi.js_
 
 现在就来开始设置吧：
 
@@ -90,16 +90,19 @@ _Tools - Rewrite_
 
 这样设置之后
 
-http://mat1.gtimg.com/www/mb/js/mi_131114b.js 这个请求就会变成
+_http://mat1.gtimg.com/www/mb/js/mi\_131114b.js_ 这个请求就会变成
 
-http://mat1.gtimg.com/www/mb/js/mi.js
+_http://mat1.gtimg.com/www/mb/js/mi.js_
 
 然后，由于刚才设置了Map Local本地替换
-所以这个被修改后的请求，会被指向本地的(workDir)/js/mi.js
+
+所以这个被修改后的请求，会被指向本地的 _(workDir)/js/mi.js_
 
 这就完成了稍微复杂一点的替换功能了
 
-Rewrite功能很强大的，包括header的增删改和param的增删改，还有body修改等。大家可以尽情发挥修改请求和替换文件目录的创意～
+Rewrite功能很强大的，包括header的增删改和param的增删改，还有body修改等。
+
+大家可以尽情发挥修改请求和替换文件目录的创意～
 
 
 ####为其他设备做代理
@@ -118,13 +121,17 @@ charles的另外一个比较常用的功能，就是为同一个局域网内的�
 
 
 ####其他偶尔用到的功能
-* Proxy - Throttle Setting
+* _Proxy - Throttle Setting_
+
     这是网络延迟功能，可以测试慢网速下的体验效果
-* Tool - Map Remote
+
+* _Tool - Map Remote_
+
     类似Map Local，只是替换成的是一个另网址，而不是本地路径
 	
 
 Charles还有很多其他的功能，比较反向代理，断点，保存完整请求什么的，只是lz木有用过，所以就只有大家自己去体验吧～
+
 另外，Charles缺少一个我很需要的功能，就是host切换，这倒是有一点点小小的遗憾。
 
 楼主是blog新手，如有错误请见谅and请告诉我，Thanks~~
