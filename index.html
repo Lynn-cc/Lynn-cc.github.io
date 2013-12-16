@@ -1,78 +1,83 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-
-    <title>Qidaoxingfu.github.io by Lynn-cc</title>
-  </head>
-
-  <body>
-
-    <header>
-      <div class="container">
-        <h1>Qidaoxingfu.github.io</h1>
-        <h2></h2>
-
-        <section id="downloads">
-          <a href="https://github.com/Lynn-cc" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
-        </section>
-      </div>
-    </header>
-
+---
+layout: default
+title: Home
+---
+<!-- Content
+================================================== -->
+<div class="content">
     <div class="container">
-      <section id="main_content">
-        <h1>
-<a name="lynn%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2" class="anchor" href="#lynn%E7%9A%84%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2"><span class="octicon octicon-link"></span></a>Lynn的个人博客</h1>
+        <div class="row-fluid">
+            <section class="content">
+                <h1>Lynn's Blog</h1>
+                <div class="sub-title">About HTML5, Javascript, etc.</div>
+            </section>
+            <ul class="entries">
+                {% for post in paginator.posts %}
+                <li>
+                    <h2>
+                        <a href="{{ post.url }}">{{ post.titleCN }}</a>
+                    </h2>
+                
+                <time>{{ post.date | date: "%d %B %Y" }}</time>
+                <div class="keywords">
+                    Keywords:
+                    {% for tag in post.tags %}
+                    <span>{{ tag, '' }}</span>
+                    {% endfor %}
+                </div>
+                <!--div class="content">{{ post.content | truncatewords }}</div-->
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
 
-<h2>
-<a name="%E6%9C%80%E6%96%B0" class="anchor" href="#%E6%9C%80%E6%96%B0"><span class="octicon octicon-link"></span></a>最新</h2>
+        <div id="post-pagination">
+            {% if paginator.previous_page %}
+            <p class="prev">
+            {% if paginator.previous_page == 1 %}
+            <a href="/">Previous</a>
+            {% else %}
+            <a href="/page{{paginator.previous_page}}"> Previous</a>
+            {% endif %}
+            </p>
+            {% else %}
+            <!--         <p class="prev disabled">
+            <span>Previous</span>
+            </p> -->
+            {% endif %}
 
-<p>自从更新过一篇翻译之后再也没后续了～典型的半途而废习惯综合症患者。。</p>
+            <ul class="pages">
+                <li class="page">
+                {% if paginator.page == 1 %}
+                <!--             <span class="current-page">1</span> -->
+                {% else %}
+                <!--             <a href="/">1</a> -->
+                {% endif %}
+                </li>
 
-<p>我会尽量找点内容来写的。。</p>
+                {% for count in (2..paginator.total_pages) %}
+                <li class="page">
+                {% if count == paginator.page %}
+                <span class="current-page">{{count}}</span>
+                {% else %}
+                <a href="/page{{count}}">{{count}}</a>
+                {% endif %}
+                </li>
+                {% endfor %}
+            </ul>
 
-<p>-_-#</p>
+            {% if paginator.next_page %}
+            <p class="next">
+            <a href="/page{{paginator.next_page}}">Next</a>
+            </p>
+            {% else %}
+            <!--         <p class="next disabled">
+            <span>Next</span>
+            </p> -->
+            {% endif %}
+        </div>
 
-<h2>
-<a name="%E5%85%B3%E4%BA%8E%E5%86%85%E5%AE%B9" class="anchor" href="#%E5%85%B3%E4%BA%8E%E5%86%85%E5%AE%B9"><span class="octicon octicon-link"></span></a>关于内容</h2>
-
-<p>暂时打算是练习翻译一些国外的关于HTML5和Javascript的文章</p>
-
-<p>以前没有做过翻译，英文也不太好，所以只是练习过程的顺便分享</p>
-
-<p>有不准确的地方请谅解and联系我。</p>
-
-<p><strong>Thanks</strong></p>
-
-<h2>
-<a name="%E5%85%B3%E4%BA%8Eblog%E6%90%AD%E5%BB%BA" class="anchor" href="#%E5%85%B3%E4%BA%8Eblog%E6%90%AD%E5%BB%BA"><span class="octicon octicon-link"></span></a>关于Blog搭建</h2>
-
-<ul>
-<li>主题：<a href="http://richbray.me/frap/">Green Tea</a>
-</li>
-<li>代码高亮插件：<a href="https://code.google.com/p/google-code-prettify/">prettify</a>
-</li>
-<li>代码高亮css：<a href="https://github.com/RaphaelDDL/google-prettify-monokai-theme">monokai</a>
-</li>
-</ul><p><em>Ps、部分代码有做修改。</em></p>
-
-<h2>
-<a name="%E5%85%B3%E4%BA%8E%E6%88%91" class="anchor" href="#%E5%85%B3%E4%BA%8E%E6%88%91"><span class="octicon octicon-link"></span></a>关于我</h2>
-
-<ul>
-<li>Mail：babyliner^gmail.com</li>
-</ul><h2>
-<a name="%E7%89%B9%E5%88%AB%E9%B8%A3%E8%B0%A2" class="anchor" href="#%E7%89%B9%E5%88%AB%E9%B8%A3%E8%B0%A2"><span class="octicon octicon-link"></span></a>特别鸣谢</h2>
-
-<p>来自<a href="http://github.com/beiyuu">beiyuu</a>的文章：<a href="http://beiyuu.com/github-pages/">使用github pages建独立博客</a></p>
-      </section>
     </div>
+</div>
 
-    
-  </body>
-</html>
+
