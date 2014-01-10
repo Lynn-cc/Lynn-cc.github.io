@@ -25,7 +25,7 @@ titleCN: 封装jQuery的ajax方法实现iframe跨域
         } else {
             cc.ajaxArr.push(o);
 
-            tws.crossLoading = true;
+            cc.crossLoading = true;
 
             cc.$ajaxIframe = $('<iframe id="ccajax" name="ccajax" src="http://somedomain.com/proxy.html" onload="cc.ajaxload()" style="display:none"></iframe>');
             $('body').append(cc.$ajaxIframe);
@@ -89,7 +89,7 @@ $.ajax返回的是一个[$.Deferred][http://api.jquery.com/jQuery.Deferred/]对�
         } else {
             cc.$ajaxIframe = $('<iframe id="ccajax" name="ccajax" src="http://somedomain.com/proxy.html" onload="cc.ajaxload()" style="display:none"></iframe>');
             $('body').append(cc.$ajaxIframe);
-            tws.crossLoading = true;
+            cc.crossLoading = true;
 
             obj = {
                 data: o,
