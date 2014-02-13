@@ -8,6 +8,7 @@ titleCN: 封装jQuery的ajax方法实现iframe跨域
 
 [@麟儿丶](http://weibo.com/13511031)原创,转载请注明[出处](http://lynn-cc.github.io)
 
+
 这次讲一下在封装jquery的ajax方法来实现iframe跨域的实践。
 
 其实本身直接封装一下ajax方法，让它能用iframe跨域是很容易的，这是第一次的代码：
