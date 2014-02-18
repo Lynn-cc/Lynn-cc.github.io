@@ -44,8 +44,23 @@
 	<!-- Javascripts
 	    ================================================= -->
 	<script src="/js/jquery.min.js"></script>
-	<script src="/js/custom.js"></script>
     <script src="/google-code-prettify/prettify.js"></script>
+	<script src="/js/custom.js"></script>
+    {{ if page.layout is 'post_page' }}
+    <script type="text/javascript">
+        $(function() {
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'cchub'; // required: replace example with your forum shortname
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            var dsq = document.createElement('script');
+            dsq.type = 'text/javascript';
+            dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        });
+    </script>
+    {{ endif }}
+
     <!-- Analytics
     ================================================== -->
 	</body>

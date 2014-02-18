@@ -67,13 +67,13 @@ hr{
 // --------------------------------------------------
 
 .a-hover{
-        color: $grayDark;
+        color: $blueFrench;
+        text-decoration:none;
         @include transition(0.3s linear);
 
         &:hover{
-            color: $grayDark;
-            text-decoration:none;
-            @include opacity(50);
+            @include opacity(70);
+            text-decoration:underline;
         }
 }
 
@@ -267,7 +267,7 @@ hr{
         color: darken($grayLight, 10%);
 
         a {
-            color: lighten($grayLight, 10%);
+            @extend .a-hover;
         }
 
         em {
