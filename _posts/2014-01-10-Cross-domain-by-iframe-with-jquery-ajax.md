@@ -62,7 +62,7 @@ titleCN: 封装jQuery的ajax方法实现iframe跨域
     });
 
 
-$.ajax返回的是一个[$.Deferred][http://api.jquery.com/jQuery.Deferred/]对象，是一个js异步的解决方案。关于它的介绍可以参考文档，或者[这篇文章][http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html]。
+$.ajax返回的是一个[$.Deferred](http://api.jquery.com/jQuery.Deferred/)对象，是一个js异步的解决方案。关于它的介绍可以参考文档，或者[这篇文章](http://www.ruanyifeng.com/blog/2011/08/a_detailed_explanation_of_jquery_deferred_object.html)。
 
 而我们希望cc.ajax的调用方式和$.ajax可以完全一样。
 
