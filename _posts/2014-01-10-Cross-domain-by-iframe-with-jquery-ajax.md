@@ -2,7 +2,7 @@
 layout: post_page
 title: Cross-domain by iframe with jQuery ajax
 tags: jquery iframe cross-domain deferred
-category: tools
+category: jQuery
 titleCN: 封装jQuery的ajax方法实现iframe跨域
 ---
 
