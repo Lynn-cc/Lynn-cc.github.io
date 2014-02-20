@@ -58,7 +58,7 @@ titleCN: 封装jQuery的ajax方法实现回调过滤和重发请求
     };
 
     cc.sendAjax = function(obj) {
-        // 将success, error, complete参数都换成链式的done,fail,alaway
+        // 将success, error, complete参数都换成链式的done,fail,always
         // 酱紫才能统一做控制
         if (obj.data.success) {
             obj.def.done(obj.data.success);
