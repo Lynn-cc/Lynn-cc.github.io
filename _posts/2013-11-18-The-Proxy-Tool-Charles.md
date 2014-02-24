@@ -6,8 +6,7 @@ category: tools
 titleCN: 使用代理软件Charles
 ---
 
-[@麟儿丶](http://weibo.com/13511031)原创,转载请注明[出处](http://lynn-cc.github.io)
-
+{% include copy.md %}
 
 [Charles](http://www.charlesproxy.com/)是一个非常棒的代理工具,windows，mac和linux都可以用（不过要收费的 ^-^ ）
 

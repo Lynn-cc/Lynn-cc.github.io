@@ -3,15 +3,14 @@ layout: post_page
 title: ajax filter and retry with jQuery ajax
 tags: jquery ajax
 category: jQuery
-titleCN: 封装jQuery的ajax方法实现回调过滤和重发请求
+titleCN: 封装jQuery的ajax实现回调过滤
 ---
 
-[@麟儿丶](http://weibo.com/13511031)原创,转载请注明[出处](http://lynn-cc.github.io)
-
+{% include copy.md %}
 
 在[之前的文章里](/Cross-domain-by-iframe-with-jquery-ajax/)讲了封装jQuery方法实现ajax跨域，这次讲一下在封装jquery的ajax方法来实现对请求进行过滤以及重发，比如在请求成功的时候，如果返回数据异常，提示是否重新发送请求，或者统一对所有ajax的错误请求进行重发和统计等。
 
-修改如下：
+代码修改如下：
 
     cc.ajaxArr = [];
     cc.ajax = function(o) {

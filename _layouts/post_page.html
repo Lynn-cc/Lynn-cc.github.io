@@ -16,6 +16,7 @@ layout: default
 					{{ content }}
 					<hr>
 				</section>
+                {% include share.html %}
 				<section style="margin-bottom: 2em;">
 					{% if page.previous %}
 							<a rel="prev" class="a-hover"href="{{ page.previous.url }}"><i class="icon-arrow-left"></i> {{ page.previous.title }}</a>
@@ -29,4 +30,3 @@ layout: default
         </div>
     </section>
 </main>
-

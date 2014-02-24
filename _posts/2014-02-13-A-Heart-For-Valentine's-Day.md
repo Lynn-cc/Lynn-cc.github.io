@@ -3,10 +3,10 @@ layout: post_page
 title: A heart for Valentine's Day
 tags: demo html5 festival
 category: demo
-titleCN: 情人节心
+titleCN: HTML5的情人节心动画
 ---
 
-[@麟儿丶](http://weibo.com/13511031)原创,转载请注明[出处](http://lynn-cc.github.io)
+{% include copy.md %}
 
 情人节的HTML5心~~~
 

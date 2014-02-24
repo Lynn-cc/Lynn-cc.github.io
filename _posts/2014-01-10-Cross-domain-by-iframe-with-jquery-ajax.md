@@ -3,11 +3,10 @@ layout: post_page
 title: Cross-domain by iframe with jQuery ajax
 tags: jquery iframe cross-domain deferred
 category: jQuery
-titleCN: 封装jQuery的ajax方法实现iframe跨域
+titleCN: 封装jQuery的ajax实现iframe跨域
 ---
 
-[@麟儿丶](http://weibo.com/13511031)原创,转载请注明[出处](http://lynn-cc.github.io)
-
+{% include copy.md %}
 
 这次讲一下在封装jquery的ajax方法来实现iframe跨域的实践。
 

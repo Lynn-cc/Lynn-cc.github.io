@@ -3,18 +3,18 @@ layout: post_page
 title: 5 HTML5 Javascript APIs
 tags: HTML5 Javascript API
 category: Javascript
-titleCN: 5个值得关注的HTML5 Javascript API
+titleCN: 5个值得关注的HTML5 JS API
 ---
 
 原文:[5 HTML5 Javascript APIs to keep an eye on](http://daker.me/2013/06/5-html5-javascript-apis-to-keep-an-eye-on.html)
 
-翻译:[@麟儿丶](http://weibo.com/13511031)
+{% include blogLink.md %} 翻译:
 
 在我的[上一篇文章](http://daker.me/2013/05/5-html5-features-you-need-to-know.html)中，讲的是HTML5 API，所以，接下来写一些旧的新的Javascript API应该也会很有意思。CSS正在不断强化，直到今天，可以用纯CSS实现过去必须由Javascript来完成的事情，而另一方面，Javascript也必须强化来跟随这个变革，所以现在Javascript可以做非常多的事情了，比如，访问硬件（摄像头、麦克风、游戏手柄、GPU），还有访问文件系统和Websocket。
 
 ###电池状态API
 
-电池状态的API使任何网页都可以通过Javascript来检查设备（笔记本电脑、手机或平板电脑）的电池状态。
+电池状态的API使任何网页都可以通过Javascript来检查设备（笔记本电脑、手机或平板电脑）的电池状态。代码:
 
     var battery = navigator.battery ||
     navigator.webkitBattery || navigator.mozBattery
