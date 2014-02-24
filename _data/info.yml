@@ -1,4 +1,4 @@
-blogName: Lynn\'s blog 
-domin: http\://lynn-cc.github.io
+blogName: Lynn's blog 
+domin: http://lynn-cc.github.io
 exceptContentLen: 15   #分享简介开头忽略的版权文本长度
 disqusName: cchub   #disque的站点名，不可更改
