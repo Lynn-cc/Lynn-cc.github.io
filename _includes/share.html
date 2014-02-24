@@ -14,10 +14,9 @@
     </div>
     <script type="text/javascript" >
         var jiathis_config = (function() {
-            var text = '{{ content | strip_html | strip_newlines | truncatewords : 80 }}';
             var startIndex = {{ site.data.info.exceptContentLen }};
+            var text = '{{ content | strip_html | strip_newlines | truncatewords : 80 }}'.substr(startIndex);
             var endIndex = text.search('代码');
-            text = text.substr(startIndex);
             if (endIndex !== -1) {
                 text = text.substring(0, endIndex);
             }
