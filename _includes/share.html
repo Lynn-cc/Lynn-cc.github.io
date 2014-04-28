@@ -15,7 +15,7 @@
     <script type="text/javascript" >
         var jiathis_config = (function() {
             var startIndex = {{ site.data.info.exceptContentLen }};
-            var text = '{{ content | strip_html | strip_newlines | truncatewords : 80 }}'.substr(startIndex);
+            var text = '{{ content | strip_html | strip_newlines | truncate : 60 }}'.substr(startIndex);
             var endIndex = text.search('代码');
             if (endIndex !== -1) {
                 text = text.substring(0, endIndex);
@@ -23,7 +23,7 @@
             return {
                 data_track_clickback: 'true',
                 url: '{{ site.data.info.domin }}{{ page.url }}',
-                summary: text + '... ',
+                summary: text + '...  ' + '{{ site.data.info.domin }}{{ page.url }}',
                 title: '<{{ page.titleCN }}> - {{ site.data.info.blogName }} ',
                 shortUrl: true,
                 hideMore: true
