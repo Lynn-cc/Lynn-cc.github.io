@@ -69,11 +69,9 @@ highcharts的图表有一个设置全局的初始默认配置的方法，`Highch
         }
     });
 
-接下来就可以单独绘制每一个图表了，常用的图表类型是线性(line)，区域型(area)，柱状图(column)，饼状图(pie)。
+全局配置中有一个plotOption，这是用来对每种类型的图表绘制做单独的配置的，常用的图表类型是线性(line)，区域型(area)，柱状图(column)，饼状图(pie)。
 
-一般一个dom就绘制一个图表，它的类型在`chart->type`里设置，默认都是line的。(当然可以一个dom里绘制多个图表，像官网首页那样，这个暂不介绍)。
-
-全局配置中有一个plotOption，这是用来对每种类型的图表绘制做单独的配置的。和当前chart的type一致的配置会被应用，其中series中的配置是针对所有类型的。示例：
+和当前chart的type一致的配置会被应用，其中series中的配置是针对所有类型的。示例：
 
     var plotOptions = {
 
@@ -130,7 +128,9 @@ highcharts的图表有一个设置全局的初始默认配置的方法，`Highch
 
 如果你就画一个图表就不用考虑了，全部扔进单个配置就好了。。。
 
-加上上面的代码，我们来画三个色调统一，tooltip效果一致的不同类型图表吧! [_DEMO>>_](/demo/2014-04-28-Draw-Beautiful-Charts-with-HighchartJs/index.html)
+接下来就可以单独绘制每一个图表了。 一般一个dom就绘制一个图表，它的类型在`chart->type`里设置，默认都是line的。(当然可以一个dom里绘制多个图表，像官网首页那样，这个暂不介绍)。
+
+加上上面的代码，我们来画三个效果一致的不同类型图表吧! [_DEMO>>_](/demo/2014-04-28-Draw-Beautiful-Charts-with-HighchartJs/index.html)
 
     $('<div></div>').highcharts({
         chart: {
