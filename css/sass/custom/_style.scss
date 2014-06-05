@@ -25,7 +25,7 @@ body{
 }
 
 main.container, main.content > .container{
-    width:80em;
+    width:100%;
 }
 
 hr{
@@ -63,6 +63,11 @@ hr{
   src: local('Varela Round'), url(http://themes.googleusercontent.com/static/fonts/varelaround/v3/APH4jr0uSos5wiut5cpjrqRDOzjiPcYnFooOUGCOsRk.woff) format('woff');
 }
 
+@media screen and (max-width:600px) {
+  .keywords { display:none; }
+  footer { display:none; }
+}
+
 // 1. b Extends
 // --------------------------------------------------
 
@@ -82,9 +87,12 @@ hr{
 
 .content{
     background-color: #f9f7f4;
+    margin: 0 0.2em;
+    padding: 1em 0.8em;
 
     & > .container{
        min-height: 58em;
+       max-width: 70em;
     }
 }
 
@@ -94,7 +102,7 @@ hr{
         font-family: 'Varela Round', 'YouYuan', 'sans-serif';
         /*text-transform: uppercase;*/
         font-weight: normal;
-        font-size: 4.1em;
+        font-size: 3em;
         margin-top: 1em;
         letter-spacing: 0.04em;
         color: $greenSpotify;
@@ -102,8 +110,8 @@ hr{
 
     .sub-title{
         font-family: 'Raleway';
-        font-size: 1.8em;
-        margin: 0.8em 0 3em;
+        font-size: 1.2em;
+        margin: 0.8em 0 1.2em;
         color: $grayLight;
     }
 }
@@ -120,8 +128,8 @@ hr{
 
     > li {
         border-bottom: 1px solid lighten($grayLight, 20%);
-        margin-bottom: 3em;
-        padding-bottom: 2.2em;
+        margin-bottom: 2em;
+        padding-bottom: 0.5em;
     }
 
     time {
@@ -133,12 +141,13 @@ hr{
     }
 
     h2 {
-        line-height: 2.4em;
+        line-height: 1.5em;
         font-family: 'Varela Round', 'YouYuan', 'sans-serif';
         color: $greenSpotify;
         font-weight: normal;
-        font-size: 2em;
+        font-size: 1.6em;
         margin-top: 0.2em;
+        margin-bottom: 1.2em;
 
         a {
             color: inherit;
@@ -215,12 +224,11 @@ hr{
 
 .post{
 
-    width: 70em;
+    width: 100%;
     float: right;
-    margin-top: -2em;
 
     .post_date {
-        margin:0.4em 0 2.5em 0;
+        margin:0.4em 0 1.5em 0;
         font-weight: normal;
         letter-spacing: 0.1em;
         padding-bottom: 1.1em;
@@ -230,9 +238,9 @@ hr{
     h2 {
         font-family: 'Varela Round', 'YouYuan', 'sans-serif';
         font-weight: normal;
-        font-size: 4em;
-        line-height: 2em;
-        padding: 1.1em 0 0.2em;
+        font-size: 2em;
+        line-height: 1.5em;
+        padding: 0;
         letter-spacing: 0.05em;
         color: $greenSpotify;
 
@@ -282,7 +290,7 @@ hr{
 // --------------------------------------------------
 
 #disqus_thread {
-    width: 70em;
+    width: 100%;
     float: right;
 }
 

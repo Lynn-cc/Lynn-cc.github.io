@@ -11,6 +11,7 @@ title: Home
                 <h1>Lynn's Blog</h1>
                 <div class="sub-title">About HTML5, Javascript, etc.</div>
             </section>
+            {% include menu.html param="home" %}
             <ul class="entries">
                 {% for post in paginator.posts %}
                 <li>
@@ -25,7 +26,6 @@ title: Home
                     <span>{{ tag, '' }}</span>
                     {% endfor %}
                 </div>
-                <!--div class="content">{{ post.content | truncatewords }}</div-->
                 </li>
                 {% endfor %}
             </ul>
