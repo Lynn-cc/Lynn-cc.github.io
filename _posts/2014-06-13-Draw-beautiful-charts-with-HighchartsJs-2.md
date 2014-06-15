@@ -77,35 +77,46 @@ highcharts的line样式非常多，而且不是像css那样定义的，不多说
 
 x轴和y轴的设置是相对复杂的一类，因为太多东东可以控制了。比如:
 
-- lineXXX:      指主轴,包括`lineWidth`,`lineColor`,还有`offset`,`min`,`max`,`minPadding`,`maxPadding`
+1. 主轴：包括`lineWidth`,`lineColor`,还有`offset`,`min`,`max`,`minPadding`,`maxPadding`
 
-- gridLineXXX:  指基准线,包括`gridLineColor`,`gridLineDashStyle`,`gridLineWidth`,`gridZIndex`,`alternateGridColor`
+2. 基准线：包括`gridLineColor`,`gridLineDashStyle`,`gridLineWidth`,`gridZIndex`,`alternateGridColor`
 
-- tickXXX:      指轴上的每个小节点,包括`tickColor`,`tickInterval`,`tickLength`,`tickPixelInterval`,`tickPosition`,`tickPositioner`,`tickPositions`,`tickWidth`,`tickmarkPlacement`，以及`minTickInterval`，还有`startOnTick`,`endOnTick`
+3. 轴上的每个小节点：包括`tickColor`,`tickInterval`,`tickLength`,`tickPixelInterval`,`tickPosition`,`tickPositioner`,`tickPositions`,`tickWidth`,`tickmarkPlacement`，以及`minTickInterval`，还有`startOnTick`,`endOnTick`
 
-- minorXXX:     这个用得比较少，指的是次轴的设置,其设置内容类似主轴
-
+4. 次轴：minor开头的配置，这个用得比较少，指的是次轴的设置,其设置内容类似主轴
 
 其中width,color,offset,zIndex什么的都是简单的样式控制。
 
-讲一下比较难理解的tick的部分：
-- `tickWidth`, `tickLength`: 这两个分别是小节点那个方块的长和宽,默认是一个针样子，即10px长，1px宽
+
+讲一下比较难理解的 __tick__ 的部分：
+
+- `tickWidth`, `tickLength`：
+
+  这两个分别是小节点那个方块的长和宽,默认是一个针样子，即10px长，1px宽
 
 - `tickInterval`, `tickPixelInterval`, `minTickInterval`：
 
   节点之间的间隔，多种计算方式，第一种`tickInterval`是普通的依照轴所代表的值来计算，比如时间轴就是毫秒，那么设置为1000 * 60 * 60 就是一小时为单位，实际使用中建议不这样用，因为大多数时候，我们只是希望它至少是小时或天，如果间隔过大，希望是自动使用更高的间隔，所以可以设置`minTickInterval`，另外在逻辑类是轴上，可以使用阶乘的方式计算间隔，详情见[文档](http://api.highcharts.com/highcharts#xAxis.tickInterval)。
 
-  `tickPixelInterval`：比较容易理解，就是像素距离，不设置`tickInterval`情况下可以生效，这样保证无论数据什么样，节点的距离都是一样的，数值间隔会被自动计算。
+- `tickPixelInterval`：
 
-- `tickmarkPlacement`：是种类的轴用的（例如苹果，梨，香蕉这种轴），设置节点是在每一个分类的中间位置还是每两个分类之间位置
+  比较容易理解，就是像素距离，不设置`tickInterval`情况下可以生效，这样保证无论数据什么样，节点的距离都是一样的，数值间隔会被自动计算。
 
-- `tickPosition`：是说节点在轴内侧还是外侧
+- `tickmarkPlacement`：
+
+  是种类的轴用的（例如苹果，梨，香蕉这种轴），设置节点是在每一个分类的中间位置还是每两个分类之间位置
+
+- `tickPosition`：
+
+  是说节点在主轴内侧还是外侧
 
 - `tickPositioner`, `tickPositions`：
 
   这两个和`tickInterval`那三个有关系，当希望不是以固定的间隔或逻辑间隔来设置每个节点的时候，可以完全自定义节点值，其中`tickPositions`是直接设置一个数值数组，数组中的值才有对应节点，而`tickPositioner`是函数，同样返回一个数组，函数优点在于上下文里可以读取很多内容，方便用于计算，比如dataMin，dataMax等
 
-- `startOnTick`, `endOnTick`：是否显示第一个节点和最后一个节点
+- `startOnTick`, `endOnTick`：
+
+  是否显示第一个节点和最后一个节点
 
 
 ####DEMO
@@ -212,4 +223,3 @@ x轴和y轴的设置是相对复杂的一类，因为太多东东可以控制了
       },
       tooltip: { enabled: false }
     }));
-
