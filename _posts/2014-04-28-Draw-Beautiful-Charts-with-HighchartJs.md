@@ -13,13 +13,14 @@ titleCN: 使用Highchart库做漂亮图表---API基础
 
 ####基本介绍
 highcharts是基于jquery的，有以下几个js库：
- - `highcharts.js                 `   最常用的一些图表都可以绘制
- - `highstock.js                  `   包含了highcharts的所有功能，主要为时间为X轴的图表提供了更强大的支持
- - `highmaps.js                   `   对地图绘制支持的扩展库
- - `highcharts-more.js            `   提供更多不常用图表的支持
- - `modules/exporting.js          `   输出为图片的扩展支持
- - `adapters/mootools-adapter.js  `   为mootools做适配
- - `adapters/prototype-adapter.js `   为prototype做适配
+
+- `highcharts.js                 `   最常用的一些图表都可以绘制
+- `highstock.js                  `   包含了highcharts的所有功能，主要为时间为X轴的图表提供了更强大的支持
+- `highmaps.js                   `   对地图绘制支持的扩展库
+- `highcharts-more.js            `   提供更多不常用图表的支持
+- `modules/exporting.js          `   输出为图片的扩展支持
+- `adapters/mootools-adapter.js  `   为mootools做适配
+- `adapters/prototype-adapter.js `   为prototype做适配
 
 
 一般我们使用highcharts或者highstock就可以了。官网有很多demo可以看，所以本文主要讲api结构的理解和使用方面，让大家可以更好的运用到实际工作需求中。
@@ -69,9 +70,9 @@ highcharts的图表有一个设置全局的初始默认配置的方法，`Highch
         }
     });
 
-全局配置中有一个plotOption，这是用来对每种类型的图表绘制做单独的配置的，常用的图表类型是线性(line)，区域型(area)，柱状图(column)，饼状图(pie)。
+全局配置中有一个`plotOption`，这是用来对每种类型的图表绘制做单独的配置的，常用的图表类型是线性(line)，区域型(area)，柱状图(column)，饼状图(pie)。
 
-和当前chart的type一致的配置会被应用，其中series中的配置是针对所有类型的。示例：
+和当前chart的type一致的配置会被应用，其中`series`中的配置是针对所有类型的。示例：
 
     var plotOptions = {
 
