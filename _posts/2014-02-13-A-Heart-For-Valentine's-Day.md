@@ -10,4 +10,4 @@ titleCN: HTML5的情人节心动画
 
 情人节的HTML5心~~~
 
-[_demo>>_](/demo/2014-02-13-A-Heart-For-Valentine's-Day/index.html)
+[_demo>>_](demo/2014-02-13-A-Heart-For-Valentine's-Day/index.html)

@@ -121,7 +121,7 @@ x轴和y轴的设置是相对复杂的一类，因为太多东东可以控制了
 
 ####DEMO
 现在，我把上面学的东东都用一遍吧！
-[_DEMO>>_](/demo/2014-06-13-Draw-Beautiful-Charts-with-HighchartsJs-2/index.html)
+[_DEMO>>_](demo/2014-06-13-Draw-Beautiful-Charts-with-HighchartsJs-2/index.html)
 
 
 ####代码

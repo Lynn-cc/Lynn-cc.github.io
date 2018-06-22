@@ -131,7 +131,7 @@ highcharts的图表有一个设置全局的初始默认配置的方法，`Highch
 
 接下来就可以单独绘制每一个图表了。 一般一个dom就绘制一个图表，它的类型在`chart->type`里设置，默认都是line的。(当然可以一个dom里绘制多个图表，像官网首页那样，这个暂不介绍)。
 
-加上上面的代码，我们来画三个效果一致的不同类型图表吧! [_DEMO>>_](/demo/2014-04-28-Draw-Beautiful-Charts-with-HighchartJs/index.html)
+加上上面的代码，我们来画三个效果一致的不同类型图表吧! [_DEMO>>_](demo/2014-04-28-Draw-Beautiful-Charts-with-HighchartJs/index.html)
 
     $('<div></div>').highcharts({
         chart: {
